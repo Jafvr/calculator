@@ -1,0 +1,30 @@
+<!-- my react wasn't working properly but this is the code I looked into -->
+  
+  
+  
+  const [displayValue, setDisplayValue] = useState('0');
+  const [currentOperation, setCurrentOperation] = useState(null);
+
+  return (
+    <div>
+      <input type="text" value={displayValue} />
+      <br />
+      <button onClick={() => setDisplayValue('1')}>1</button>
+      <button onClick={() => setDisplayValue('2')}>2</button>
+      <button onClick={() => setDisplayValue('+')}>+</button>
+      <button onClick={() => setDisplayValue('-')}>-</button>
+      <br />
+      <button onClick={() => setDisplayValue('3')}>3</button>
+      <button onClick={() => setDisplayValue('4')}>4</button>
+      <button onClick={() => setDisplayValue('*')}>*</button>
+      <button onClick={() => setDisplayValue('/')}>/</button>
+      <br />
+      <button onClick={() => setDisplayValue('.')}>.</button>
+      <button onClick={() => setDisplayValue('0')}>0</button>
+      <button onClick={() => setDisplayValue('=')}>=</button>
+      <button onClick={() => setDisplayValue('C')}>C</button>
+    </div>
+  );
+}
+
+export default Calculator;
